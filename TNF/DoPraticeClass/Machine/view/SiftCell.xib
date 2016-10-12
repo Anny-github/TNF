@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="67" id="KGk-i7-Jjw" customClass="SiftCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="托您的福机经" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBd-Oa-9Vb">
+                        <rect key="frame" x="10" y="20" width="102" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Ns1-TI-wYF"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="cih-g4-6Az"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="您的福机经托您的福机经" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oe-Ap-bJz">
+                        <rect key="frame" x="10" y="40" width="165" height="16.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.3411764705882353" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACT-7Z-b6M">
+                        <rect key="frame" x="278" y="6" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="9QC-vk-XGH"/>
+                            <constraint firstAttribute="height" constant="44" id="BQh-J7-7LQ"/>
+                        </constraints>
+                        <state key="normal" image="selectedBg_blue"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="siftIcon" translatesAutoresizingMaskIntoConstraints="NO" id="laM-BC-hfz">
+                        <rect key="frame" x="120" y="5.5" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="bP7-BU-efL"/>
+                            <constraint firstAttribute="height" constant="44" id="hIH-uv-h35"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoM-Ce-3Fg">
+                        <rect key="frame" x="222" y="39" width="90" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="naF-Zr-1ad"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="uCC-aW-C01"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="5" maxY="0.0"/>
+                        <state key="normal" title="2015/09/10" image="timeIcon">
+                            <color key="titleColor" red="0.3411764705882353" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DBd-Oa-9Vb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="HvO-lE-HkZ"/>
+                    <constraint firstItem="laM-BC-hfz" firstAttribute="leading" secondItem="DBd-Oa-9Vb" secondAttribute="trailing" constant="8" id="K4c-Sn-72v"/>
+                    <constraint firstAttribute="bottom" secondItem="9oe-Ap-bJz" secondAttribute="bottom" constant="10" id="bXG-Iw-RGk"/>
+                    <constraint firstItem="laM-BC-hfz" firstAttribute="centerY" secondItem="DBd-Oa-9Vb" secondAttribute="centerY" id="d7w-XF-sAs"/>
+                    <constraint firstItem="ACT-7Z-b6M" firstAttribute="centerY" secondItem="laM-BC-hfz" secondAttribute="centerY" id="h00-0i-NvY"/>
+                    <constraint firstItem="DBd-Oa-9Vb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="iRZ-Kl-J6J"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ACT-7Z-b6M" secondAttribute="trailing" constant="-10" id="qdK-2P-COo"/>
+                    <constraint firstItem="9oe-Ap-bJz" firstAttribute="top" secondItem="DBd-Oa-9Vb" secondAttribute="bottom" constant="5" id="qfE-fR-QoM"/>
+                    <constraint firstItem="yoM-Ce-3Fg" firstAttribute="centerY" secondItem="9oe-Ap-bJz" secondAttribute="centerY" id="sSP-3E-DUP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="yoM-Ce-3Fg" secondAttribute="trailing" id="u3q-zj-ufy"/>
+                    <constraint firstItem="9oe-Ap-bJz" firstAttribute="leading" secondItem="DBd-Oa-9Vb" secondAttribute="leading" id="xoU-Sz-EyJ"/>
+                    <constraint firstAttribute="trailing" secondItem="9oe-Ap-bJz" secondAttribute="trailing" constant="10" id="y5t-M4-b2A"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="y5t-M4-b2A"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="297" y="211.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="selectedBg_blue" width="14" height="14"/>
+        <image name="siftIcon" width="28" height="13"/>
+        <image name="timeIcon" width="10" height="10"/>
+    </resources>
+</document>

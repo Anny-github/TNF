@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="PayCell">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gift_01" translatesAutoresizingMaskIntoConstraints="NO" id="1UT-5N-LqQ">
+                        <rect key="frame" x="10" y="10" width="66.5" height="66.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="1UT-5N-LqQ" secondAttribute="height" id="zh2-2j-00p"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信支付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N52-3f-9or">
+                        <rect key="frame" x="84" y="18.5" width="68" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Ynh-V3-vd6"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="vxb-Xl-Xs2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推荐安装微信5.0及以上版本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vn-Ea-rFB">
+                        <rect key="frame" x="84" y="48" width="211" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="211" id="F21-ce-v4L"/>
+                            <constraint firstAttribute="height" constant="20.5" id="amz-so-vWI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Etf-Rn-WCV">
+                        <rect key="frame" x="300" y="22" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="O1Q-Tv-bbP"/>
+                            <constraint firstAttribute="height" constant="44" id="czD-en-cBR"/>
+                        </constraints>
+                        <state key="normal" title="选"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="1UT-5N-LqQ" secondAttribute="bottom" constant="10" id="Obz-al-4ki"/>
+                    <constraint firstItem="7Vn-Ea-rFB" firstAttribute="leading" secondItem="N52-3f-9or" secondAttribute="leading" id="Tc2-cx-ggA"/>
+                    <constraint firstItem="7Vn-Ea-rFB" firstAttribute="centerY" secondItem="1UT-5N-LqQ" secondAttribute="centerY" constant="15" id="Vk9-ep-kCP"/>
+                    <constraint firstItem="N52-3f-9or" firstAttribute="leading" secondItem="1UT-5N-LqQ" secondAttribute="trailing" constant="7.5" id="XfU-Dx-jHQ"/>
+                    <constraint firstItem="N52-3f-9or" firstAttribute="centerY" secondItem="1UT-5N-LqQ" secondAttribute="centerY" constant="-15" id="f8D-n8-GSj"/>
+                    <constraint firstItem="1UT-5N-LqQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="k26-Os-wiN"/>
+                    <constraint firstAttribute="trailing" secondItem="Etf-Rn-WCV" secondAttribute="trailing" id="l4g-jd-bCB"/>
+                    <constraint firstItem="1UT-5N-LqQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="nDe-Vs-25K"/>
+                    <constraint firstItem="Etf-Rn-WCV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zE7-Pt-zgg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-24" y="162.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gift_01" width="21" height="21"/>
+    </resources>
+</document>

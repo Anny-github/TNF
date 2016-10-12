@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayController">
+            <connections>
+                <outlet property="_descripLabel" destination="ja2-R3-egK" id="CxU-JV-AnM"/>
+                <outlet property="_tableHeaderView" destination="K3F-17-rAN" id="snG-Th-f1d"/>
+                <outlet property="_tableView" destination="znx-d3-uey" id="zvr-9Y-Dii"/>
+                <outlet property="moneyL" destination="mtf-Nk-Y2z" id="zx6-Y7-aH3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="znx-d3-uey">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="K3F-17-rAN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVc-3K-AQf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtf-Nk-Y2z">
+                                        <rect key="frame" x="20" y="15" width="46" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Pxe-Le-o6b"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="byi-lL-Lcz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="充值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ja2-R3-egK">
+                                        <rect key="frame" x="20" y="36" width="34" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="34" id="A5w-fK-ceF"/>
+                                            <constraint firstAttribute="height" constant="21" id="sWc-V7-hWL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="mtf-Nk-Y2z" firstAttribute="leading" secondItem="GVc-3K-AQf" secondAttribute="leading" constant="20" id="64m-Y3-IGr"/>
+                                    <constraint firstItem="ja2-R3-egK" firstAttribute="top" secondItem="mtf-Nk-Y2z" secondAttribute="bottom" id="6lA-CO-0P0"/>
+                                    <constraint firstItem="ja2-R3-egK" firstAttribute="leading" secondItem="mtf-Nk-Y2z" secondAttribute="leading" id="eq6-93-u8L"/>
+                                    <constraint firstItem="mtf-Nk-Y2z" firstAttribute="top" secondItem="GVc-3K-AQf" secondAttribute="top" constant="15" id="yxM-Ac-hJe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GVc-3K-AQf" firstAttribute="top" secondItem="K3F-17-rAN" secondAttribute="top" id="59z-aC-Faw"/>
+                            <constraint firstAttribute="bottom" secondItem="GVc-3K-AQf" secondAttribute="bottom" constant="50" id="JUe-MZ-UJ0"/>
+                            <constraint firstAttribute="trailing" secondItem="GVc-3K-AQf" secondAttribute="trailing" id="P41-KA-2pU"/>
+                            <constraint firstItem="GVc-3K-AQf" firstAttribute="leading" secondItem="K3F-17-rAN" secondAttribute="leading" id="RAh-4S-r0N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="vuq-cZ-429"/>
+                        <outlet property="delegate" destination="-1" id="Ujp-Fi-jGH"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="znx-d3-uey" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6rd-tv-fH1"/>
+                <constraint firstAttribute="bottom" secondItem="znx-d3-uey" secondAttribute="bottom" id="AMh-4x-8bl"/>
+                <constraint firstAttribute="trailing" secondItem="znx-d3-uey" secondAttribute="trailing" id="bX0-U5-e4R"/>
+                <constraint firstItem="znx-d3-uey" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gtQ-tD-Frm"/>
+            </constraints>
+            <point key="canvasLocation" x="338" y="172"/>
+        </view>
+    </objects>
+</document>

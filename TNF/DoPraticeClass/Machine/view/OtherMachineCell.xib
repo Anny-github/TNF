@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="102" id="KGk-i7-Jjw" customClass="OtherMachineCell">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="101.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Describe a transportation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bsz-1V-xiN">
+                        <rect key="frame" x="10" y="10" width="195" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="NVY-rd-UVw"/>
+                            <constraint firstAttribute="height" constant="21" id="Z2W-yW-nGa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0s-QH-D0t">
+                        <rect key="frame" x="10" y="29" width="305" height="67.5"/>
+                        <string key="text">Describe a transportationDescribe a transportationDescribe a transportationDescribe a transportationDescribe a transportationDescribe a transportationDescribe a transportationDescribe a transportationDescribe a transportationDescribe a transportationDescribe a transportationDescribe a transportation</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1W-8L-Kgy">
+                        <rect key="frame" x="275" y="11" width="40" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="MEf-Px-0Kp"/>
+                            <constraint firstAttribute="width" constant="40" id="oAy-xI-JFx"/>
+                        </constraints>
+                        <state key="normal" image="isPractice"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Bsz-1V-xiN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="0kz-th-tWk"/>
+                    <constraint firstItem="Bsz-1V-xiN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="2wQ-34-AnO"/>
+                    <constraint firstAttribute="trailing" secondItem="S0s-QH-D0t" secondAttribute="trailing" constant="10" id="690-XJ-lYc"/>
+                    <constraint firstAttribute="bottom" secondItem="S0s-QH-D0t" secondAttribute="bottom" constant="5" id="FG2-ao-7AL"/>
+                    <constraint firstItem="S0s-QH-D0t" firstAttribute="top" secondItem="Bsz-1V-xiN" secondAttribute="bottom" constant="-2" id="WJa-Zc-v4W"/>
+                    <constraint firstItem="S1W-8L-Kgy" firstAttribute="centerY" secondItem="Bsz-1V-xiN" secondAttribute="centerY" id="cOE-Mm-NYp"/>
+                    <constraint firstItem="S0s-QH-D0t" firstAttribute="leading" secondItem="Bsz-1V-xiN" secondAttribute="leading" id="tOo-vR-i9D"/>
+                    <constraint firstAttribute="trailing" secondItem="S1W-8L-Kgy" secondAttribute="trailing" constant="10" id="yOs-XS-paH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="235.5" y="201"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="isPractice" width="28" height="13"/>
+    </resources>
+</document>
